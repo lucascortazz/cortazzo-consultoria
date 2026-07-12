@@ -140,6 +140,110 @@ function LogoMark({ className = 'logo-mark' }) {
   )
 }
 
+function HouseDiagram() {
+  return (
+    <svg
+      viewBox="0 0 400 330"
+      role="img"
+      aria-label="Casa da excelência operacional: a visão no topo, sustentada pelos pilares de melhoria dos processos e desenvolvimento das pessoas, com o sistema de gestão ao centro e a cultura como base"
+    >
+      <polygon className="dgm-navy" points="200,12 378,96 22,96" />
+      <text className="dgm-title-ondark" x="200" y="64" textAnchor="middle">
+        Visão
+      </text>
+      <text className="dgm-caps-ondark" x="200" y="84" textAnchor="middle">
+        direcionada pelo valor
+      </text>
+
+      <rect className="dgm-pillar" x="34" y="108" width="62" height="148" rx="8" />
+      <text className="dgm-caps-vertical" transform="rotate(-90 65 182)" x="65" y="186" textAnchor="middle">
+        Melhoria processos
+      </text>
+
+      <rect className="dgm-pillar" x="304" y="108" width="62" height="148" rx="8" />
+      <text className="dgm-caps-vertical" transform="rotate(-90 335 182)" x="335" y="186" textAnchor="middle">
+        Desenv. pessoas
+      </text>
+
+      <rect className="dgm-box" x="110" y="108" width="180" height="148" rx="8" />
+      <text className="dgm-title" x="200" y="168" textAnchor="middle">
+        Sistema de gestão
+      </text>
+      <text className="dgm-title" x="200" y="190" textAnchor="middle">
+        e comportamento
+      </text>
+      <text className="dgm-title" x="200" y="212" textAnchor="middle">
+        da liderança
+      </text>
+
+      <rect className="dgm-navy" x="22" y="268" width="356" height="48" rx="8" />
+      <text className="dgm-title-ondark-sm" x="200" y="289" textAnchor="middle">
+        Cultura
+      </text>
+      <text className="dgm-caps-ondark" x="200" y="306" textAnchor="middle">
+        valores · comportamentos · crenças
+      </text>
+    </svg>
+  )
+}
+
+function DualSystemDiagram() {
+  return (
+    <svg
+      viewBox="0 0 400 330"
+      role="img"
+      aria-label="Sistema dualizado: a execução do dia a dia e a melhoria do modo de trabalho acontecem simultaneamente, conectando os níveis operacional, tático e estratégico"
+    >
+      <rect className="dgm-navy" x="22" y="16" width="56" height="300" rx="8" />
+      <text className="dgm-caps-vertical-ondark" transform="rotate(-90 50 166)" x="50" y="170" textAnchor="middle">
+        Execução diária
+      </text>
+
+      <rect className="dgm-accent" x="322" y="16" width="56" height="300" rx="8" />
+      <text className="dgm-caps-vertical-ondark" transform="rotate(-90 350 166)" x="350" y="170" textAnchor="middle">
+        Melhoria do trabalho
+      </text>
+
+      <rect className="dgm-box" x="102" y="16" width="196" height="76" rx="8" />
+      <text className="dgm-title" x="200" y="50" textAnchor="middle">
+        Nível 3
+      </text>
+      <text className="dgm-caps" x="200" y="66" textAnchor="middle">
+        <tspan x="200" dy="0">estratégico</tspan>
+        <tspan x="200" dy="12">alta liderança</tspan>
+      </text>
+
+      <rect className="dgm-box" x="102" y="128" width="196" height="76" rx="8" />
+      <text className="dgm-title" x="200" y="162" textAnchor="middle">
+        Nível 2
+      </text>
+      <text className="dgm-caps" x="200" y="178" textAnchor="middle">
+        <tspan x="200" dy="0">tático</tspan>
+        <tspan x="200" dy="12">média liderança</tspan>
+      </text>
+
+      <rect className="dgm-box" x="102" y="240" width="196" height="76" rx="8" />
+      <text className="dgm-title" x="200" y="274" textAnchor="middle">
+        Nível 1
+      </text>
+      <text className="dgm-caps" x="200" y="290" textAnchor="middle">
+        <tspan x="200" dy="0">operacional</tspan>
+        <tspan x="200" dy="12">chão de fábrica</tspan>
+      </text>
+
+      <line className="dgm-line-navy" x1="164" y1="94" x2="164" y2="118" />
+      <polygon className="dgm-head-navy" points="158,118 170,118 164,127" />
+      <line className="dgm-line-navy" x1="164" y1="206" x2="164" y2="230" />
+      <polygon className="dgm-head-navy" points="158,230 170,230 164,239" />
+
+      <line className="dgm-line-accent" x1="236" y1="127" x2="236" y2="103" />
+      <polygon className="dgm-head-accent" points="230,103 242,103 236,94" />
+      <line className="dgm-line-accent" x1="236" y1="239" x2="236" y2="215" />
+      <polygon className="dgm-head-accent" points="230,215 242,215 236,206" />
+    </svg>
+  )
+}
+
 function Icon({ name }) {
   return (
     <svg
@@ -302,10 +406,37 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-alt" id="trajetoria">
+        <section className="section section-alt" id="modelo">
           <div className="wrap">
             <div className="section-head">
-              <p className="section-label">04 · Trajetória</p>
+              <p className="section-label">04 · O modelo</p>
+              <h2>As bases que sustentam a transformação</h2>
+            </div>
+            <div className="diagram-grid">
+              <figure className="diagram-card">
+                <HouseDiagram />
+                <figcaption>
+                  <strong>A casa da excelência operacional.</strong> A visão direciona,
+                  processos e pessoas sustentam — e a cultura é a base que faz os
+                  resultados durarem.
+                </figcaption>
+              </figure>
+              <figure className="diagram-card">
+                <DualSystemDiagram />
+                <figcaption>
+                  <strong>Execução e melhoria, simultâneas.</strong> As metas descem e as
+                  melhorias sobem pelos três níveis de liderança: a rotina mantém a
+                  performance enquanto os projetos elevam o patamar.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="trajetoria">
+          <div className="wrap">
+            <div className="section-head">
+              <p className="section-label">05 · Trajetória</p>
               <h2>Setores e geografias com atuação prática</h2>
             </div>
             <ol className="journey">
@@ -320,10 +451,10 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="metodos" aria-label="Metodologias">
+        <section className="section section-alt" id="metodos" aria-label="Metodologias">
           <div className="wrap">
             <div className="section-head">
-              <p className="section-label">05 · Métodos e práticas</p>
+              <p className="section-label">06 · Métodos e práticas</p>
               <h2>Ferramentas aplicadas para resolver desafios reais</h2>
             </div>
             <div className="tool-list">
