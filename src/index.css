@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Source Serif 4', Georgia, serif;
+
+  --paper: #f7f5f0;
+  --paper-deep: #efece4;
+  --card: #fffefb;
+  --line: #e2ddd2;
+
+  --ink: #101b24;
+  --ink-soft: #4a5560;
+  --navy: #0c2233;
+  --navy-deep: #081826;
+
+  --accent: #b45309;
+  --accent-strong: #92400e;
+  --accent-soft: rgba(180, 83, 9, 0.12);
+
+  --on-dark: #f5f1e8;
+  --on-dark-soft: #c3ccd4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  background: var(--paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 3.7rem);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
