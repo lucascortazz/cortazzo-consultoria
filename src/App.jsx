@@ -273,6 +273,17 @@ function App() {
           </div>
         </section>
 
+        {/* Foto: Unsplash (XBWF6_TEsFM), licença Unsplash — uso comercial permitido */}
+        <section className="image-band" aria-label="Chão de fábrica">
+          <div className="wrap">
+            <p className="band-label">Gemba</p>
+            <p className="band-quote">
+              O resultado sustentável se constrói no chão de fábrica,
+              junto com quem faz.
+            </p>
+          </div>
+        </section>
+
         <section className="section" id="como-trabalho">
           <div className="wrap">
             <div className="section-head">
