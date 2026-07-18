@@ -6,7 +6,7 @@ const heroStats = [
   { value: '6', label: 'multinacionais globais na trajetória' },
 ]
 
-const companies = ['Ford', 'General Motors', 'Volkswagen', 'Honda', 'PSA Peugeot Citroën', 'Faber-Castell']
+const companies = ['Ford', 'General Motors', 'Volkswagen', 'Honda', 'PSA Peugeot Citroën', 'Faber-Castell', 'Grupo Jacto', 'CCi Consultoria']
 
 const differentiators = [
   'Trajetória sólida em montadoras e multinacionais globais',
@@ -21,7 +21,7 @@ const offerings = [
   {
     icon: 'compass',
     title: 'Estratégia e Desdobramento',
-    body: 'Conexão entre visão do negócio, metas anuais e execução no dia a dia por meio de Hoshin Kanri e KPIs críticos.',
+    body: 'Conexão entre visão do negócio, metas anuais e execução no dia a dia por meio de Hoshin Kanri.',
   },
   {
     icon: 'clipboard',
@@ -82,11 +82,11 @@ const journey = [
   {
     period: '18 anos',
     title: 'Indústria automotiva',
-    body: '6 anos em desenvolvimento de produtos e 12 anos em melhoria de manufatura, com contribuições em Ford, GM, VW, PSA e Honda.',
+    body: '6 anos em desenvolvimento de produtos e 12 anos em melhoria de manufatura, com contribuições em clientes chaves como Ford, GM, VW, PSA e Honda. 2 anos de atuação na China em uma joint venture no setor automotivo.',
   },
 ]
 
-const toolbox = ['Lean', 'Hoshin Kanri', 'DMAIC', 'PDCA', 'TPM', 'SMED', 'Gestão Diária', 'Kaizen', '5S', 'Gestão Visual']
+const toolbox = ['Lean', 'Hoshin Kanri', 'FMEA', 'CEP', 'DMAIC', 'PDCA', 'TPM', 'SMED', 'Gestão Diária', 'Kaizen', '5S', 'Gestão Visual']
 
 const icons = {
   compass: (
@@ -296,8 +296,7 @@ function App() {
                 Hélio Cortazzo Junior soma mais de 35 anos de experiência em
                 desenvolvimento de produtos, manufatura e transformação Lean em empresas
                 globais. Apoia indústrias na redução de desperdícios, aumento de
-                produtividade, desenvolvimento de líderes e melhoria consistente de
-                indicadores.
+                produtividade, desenvolvimento de líderes e melhoria sustentável.
               </p>
               <div className="hero-actions">
                 <a href="#contato" className="btn btn-primary">
@@ -424,9 +423,9 @@ function App() {
               <figure className="diagram-card">
                 <DualSystemDiagram />
                 <figcaption>
-                  <strong>Execução e melhoria, simultâneas.</strong> As metas descem e as
-                  melhorias sobem pelos três níveis de liderança: a rotina mantém a
-                  performance enquanto os projetos elevam o patamar.
+                  <strong>Execução e melhoria, simultâneas.</strong> Processo de
+                  escalonamento dos problemas e feedback entre os níveis. Todos os níveis
+                  participam da análise e solução de problemas.
                 </figcaption>
               </figure>
             </div>
